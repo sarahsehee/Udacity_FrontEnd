@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Quicksand");
 body {
   font-family: 'Open Sans', sans-serif;
   padding-top: 100px;
@@ -6,39 +6,54 @@ body {
   color: rgba(0, 0, 0, 0.7);
   /*line-height: 1.6em;*/
 }
+
 header {
 	padding-bottom: 20px;
 }
+
 h3 {
-	font-family: 'Quicksand','Open Sans',sans-serif;
+	font-family: "Quicksand","Open Sans",sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	text-transform: uppercase;
 }
+
 h5 {
-	font-family: 'Quicksand','Open Sans',sans-serif;
+	font-family: "Quicksand","Open Sans",sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 40px;
 }
+
 a {
     color: #ff6a88;
     text-decoration: none;
 }
+
 a:visited {
 	color: #ff6a88;
 }
+
 footer{
 	padding-top: 40px;
-	color:#cccccc;
+	color: #cccccc;
 }
 /*side color palletes styling*/
+
 aside {
 	display: flex;
 	flex-direction: column;
 	padding-top: 140px;
 }
-#color1{
+
+figure {
+	margin-top: 40px;
+	font-family: "Quicksand","Open Sans",sans-serif;
+	font-size: 15px;
+	font-weight: 700; 
+}
+
+.color1{
 	width: 100px;
 	height: 100px;
 	background-color: #16ffde;
@@ -46,7 +61,8 @@ aside {
 	margin: 20px auto 20px auto;
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-#color2{
+
+.color2{
 	width: 100px;
 	height: 100px;
 	background-color: #f800ff;
@@ -54,7 +70,8 @@ aside {
 	margin: 20px auto 20px auto;
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-#color3{
+
+.color3{
 	width: 100px;
 	height: 100px;
 	background-color: #ffe33a;
@@ -62,19 +79,34 @@ aside {
 	margin: 20px auto 20px auto;
 	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 @media (max-width: 991px) {
 	aside{
-		display:none;
+		flex-direction: row;
+		padding-top:0px;
+	}
+
+	.color1,
+	.color2,
+	.color3{
+		width: 80px;
+		height: 80px;
+		margin: auto;
 	}
 }
+
 @media (max-width: 414px) {
 	body{
-		padding-top: 30px;
+		padding-top: 0px;
 	}
-	header{
-		background-color: #EFF0F2;
+
+	#logo{
+		background-color: #eff0f2;
+		text-align: center;
 	}
-	#logo,#title,#featured {
+
+	#title,
+	#featured {
 		text-align: center;
 	}
 }

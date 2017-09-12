@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Sarah Sehee's Responsive Web Project </title>
-	<!--bootstrap stylesheet-->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--bootstrap minified CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--customized css stylesheet-->
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://use.fontawesome.com/6250cea78d.js"></script>
@@ -14,61 +14,66 @@
   <body>
   	<!--full width body-->
   	<div class="container-fluid">
-  		<!--left side area for color paellets-->
-  		<aside class="col-md-2 text-uppercase text-center">
-  			  	<div id="color1"></div>
-  				<figure>#16ffde</figure>
-  				<div id="color2"></div>
-  				<figure>#f800ff</figure>
-  				<div id="color3"></div>
-  				<figure>#ffe33a</figure>		
-  		</aside>
+  		<!--left side area for color palette-->
+  		<div class="row">
+	  		<aside class="col-md-2 col-sm-12 col-xs-12 text-uppercase text-center">
+	  			  	<div class="color1"><figure>#16ffde</figure></div>
+	  				<div class="color2"><figure>#f800ff</figure></div>
+	  				<div class="color3"><figure>#ffe33a</figure></div>
+	  		</aside>
   		<!--main contents area-->
-  		<main class="col-md-10 col-sm-12">
-  			<!--header logo and title-->
-  			<header class="row">
-  				<div id="logo" class="col-md-3 col-sm-3 col-xs-12">
-  					<img src="img/logo.png" height="100" alt="sarahsehee's logo">
-  				</div>
-  				<div id="title" class="col-md-9 col-sm-9 col-xs-12 text-right text-uppercase">
-  					<h3>Sarah Sehee Lim</h3>
-  					<h5>Product Designer</h5>
-  				</div>
-			</header>
-			<!--divider-->
-			<div class="col-md-12">
-				<hr>
-			</div>
-			<!--1st content with a large photo-->
-			<div class ="col-md-12">
-				<img class="img-responsive" src="img/jumbo.png" alt="big image">
-				<hr>
-			</div>
-			<!--2nd content with three small photos-->
-			<section>
-				<div class="col-md-12">
-					<h3 id="featured">Featured works</h3>
-				</div>	
-				<article class="col-md-4 col-sm-4 text-center">
-					<img class="img-responsive" src="img/switcher.png"  alt="switcher mock up image">
-					<h5 class="text-uppercase"> <a href="http://www.switcher.kr">Switcher</a></h5>
-					<p> I/O.Inc </p>
-				</article>
-				<article class="col-md-4 col-sm-4 text-center">
-					<img class="img-responsive" src="img/ondoro.png" alt="ondoro mock up image">
-					<h5 class="text-uppercase">OnDoro</h5>	
-					<p> Personal Project </p>
-				</article>
-				<article class="col-md-4 col-sm-4 text-center">
-					<img class="img-responsive" src="img/samsung.png" alt="smarthub mock up image">
-					<h5 class="text-uppercase">Samsung CX Lab</h5>	
-					<p> Samsung UXCA </p>
-				</article>
-			</section>
-			<footer class="col-md-12 col-sm-12 text-center small">
-				 Made with Udacity Front-End Web Developer Nanodegree Program  <i class="fa fa-heart" aria-hidden="true"></i> 
-			</footer>
-		</main>
+	  		<main class="col-md-10 col-sm-12">
+	  			<!--header logo and title-->
+	  			<header class="row">
+	  				<div id="logo" class="col-md-3 col-sm-3 col-xs-12">
+	  					<img src="img/logo.png" height="100" alt="sarahsehee's logo">
+	  				</div>
+	  				<div id="title" class="col-md-9 col-sm-9 col-xs-12 text-right text-uppercase">
+	  					<h3>Sarah Sehee Lim</h3>
+	  					<h5>Product Designer</h5>
+	  				</div>
+				</header>
+				<!--divider-->
+				<div class="row">
+					<div class="col-md-12">
+						<hr>
+					</div>
+				</div>
+				<!--1st content with a large photo-->
+				<div class="row">
+					<div class="col-md-12">
+						<img class="img-responsive" src="img/jumbo.png" alt="big image">
+						<hr>
+					</div>
+				</div>
+				<!--2nd content with three small photos-->
+				<section class="row">
+					<div class="col-md-12">
+						<h3 id="featured">Featured works</h3>
+					</div>	
+					<article class="col-md-4 col-sm-4 text-center">
+						<img class="img-responsive" src="img/switcher.png"  alt="switcher mock up image">
+						<h5 class="text-uppercase"> <a href="http://www.switcher.kr">Switcher</a></h5>
+						<p> I/O.Inc </p>
+					</article>
+					<article class="col-md-4 col-sm-4 text-center">
+						<img class="img-responsive" src="img/ondoro.png" alt="ondoro mock up image">
+						<h5 class="text-uppercase">OnDoro</h5>	
+						<p> Personal Project </p>
+					</article>
+					<article class="col-md-4 col-sm-4 text-center">
+						<img class="img-responsive" src="img/samsung.png" alt="smarthub mock up image">
+						<h5 class="text-uppercase">Samsung CX Lab</h5>	
+						<p> Samsung UXCA </p>
+					</article>
+				</section>
+				<div class="row">
+					<footer class="col-md-12 col-sm-12 text-center small">
+						 Made with Udacity Front-End Web Developer Nanodegree Program  <i class="fa fa-heart" aria-hidden="true"></i> 
+					</footer>
+				</div>
+			</main>
+		</div>
 	</div>
   </body>
 </html>
